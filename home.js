@@ -14,6 +14,10 @@ sr.reveal('.call', {distance: 0, scale: 0.1})
 sr.reveal('.social')
 
 // VARIATIONS //
+var about = document.querySelector(".about")
+var project = document.querySelector(".project")
+var gallery = document.querySelector(".gallery")
+var contact = document.querySelector(".contact")
 var active1 = document.querySelector(".active1_off")
 var active2 = document.querySelector(".active2_off")
 var active3 = document.querySelector(".active3_off")
@@ -61,31 +65,35 @@ document.getElementById("home").addEventListener("click", function ()
 })
 document.getElementById("about").addEventListener("click", function ()
 {
-    window.scrollTo({
-        top: 910,
-        behavior: 'smooth'
-    })
+    about.scrollIntoView(
+        {
+            behavior: 'smooth',
+            block: 'start'
+        })
 })
 document.getElementById("web").addEventListener("click", function ()
 {
-    window.scrollTo({
-        top: 1630,
-        behavior: 'smooth'
-    })
+    project.scrollIntoView(
+        {
+            behavior: 'smooth',
+            block: 'start'
+        })
 })
 document.getElementById("graphic").addEventListener("click", function ()
 {
-    window.scrollTo({
-        top: 2250,
-        behavior: 'smooth'
-    })
+    gallery.scrollIntoView(
+        {
+            behavior: 'smooth',
+            block: 'start'
+        })
 })
 document.getElementById("contact_me").addEventListener("click", function ()
 {
-    window.scrollTo({
-        top: 3000,
-        behavior: 'smooth'
-    })
+    contact.scrollIntoView(
+        {
+            behavior: 'smooth',
+            block: 'start'
+        })
 })
 // SCROLL //
 main_cursor.addEventListener("click", function () {

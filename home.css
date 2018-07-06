@@ -109,6 +109,7 @@ p {
     position: fixed;
     top: 880px;
     z-index: 999!important;
+    opacity: 0;
 }
 .navbar ul {
     list-style-type: none;
@@ -140,6 +141,7 @@ p {
     position: fixed;
     top: 0;
     width: 100%;
+    opacity: 1;
 }
 
 /* CONTACT TOP */
