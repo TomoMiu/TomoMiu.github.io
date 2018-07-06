@@ -97,23 +97,26 @@ document.getElementById("contact_me").addEventListener("click", function ()
 })
 // SCROLL //
 main_cursor.addEventListener("click", function () {
-    window.scrollTo({
-        top: 910,
-        behavior: 'smooth'
-    });
-});
+        about.scrollIntoView(
+            {
+                behavior: 'smooth',
+                block: 'start'
+            })
+    })
 block_left.addEventListener("click", function () {
-    window.scrollTo({
-        top: 1630,
-        behavior: 'smooth'
-    });
-});
+    project.scrollIntoView(
+        {
+            behavior: 'smooth',
+            block: 'start'
+        })
+})
 block_right.addEventListener("click", function () {
-    window.scrollTo({
-        top: 2250,
-        behavior: 'smooth'
-    });
-});
+    gallery.scrollIntoView(
+        {
+            behavior: 'smooth',
+            block: 'start'
+        })
+})
 // PROJECT VIEW //
 project_all.addEventListener("click", function () {
     active1.classList.add("active1_on")

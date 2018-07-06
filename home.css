@@ -431,6 +431,9 @@ h3.sub_title {
     padding-top: var(--element_padding);
     text-align: center;
 }
+.about .about_me p {
+    font-size: 16px;
+}
 .about .skill {
     padding-top: var(--element_padding);
     display: flex;
